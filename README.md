@@ -150,9 +150,11 @@ This UI provides a user-friendly interface to test and understand the functional
 
 ## Verfied response time to meet the requirement 
 1. GET Api
-  ![image](https://github.com/kiranmadanwad/prefix/assets/29003308/1316d58c-f1ff-4a97-ba0b-4061f25bbba5)
+  ![image](https://github.com/kiranmadanwad/prefix/assets/29003308/ba3a9e38-f270-43ad-85fc-154c45d35456)
+
 2. POST Api
-  ![image](https://github.com/kiranmadanwad/prefix/assets/29003308/a6c65049-403f-4ab4-930d-f3f0b064ba2f)
+  ![image](https://github.com/kiranmadanwad/prefix/assets/29003308/d0ae6cbe-da40-4c94-bdc0-db30889936e6)
+
 
 Feel free to use and customize this README for your Spring Boot Prefix Lookup Application. Happy coding!
 ## 
