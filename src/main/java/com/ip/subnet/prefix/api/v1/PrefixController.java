@@ -11,7 +11,7 @@ import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/v1/prefixes/lookup")
+@RequestMapping("/v1/prefixes")
 @Tag(name = "Prefix")
 @AllArgsConstructor
 public class PrefixController {

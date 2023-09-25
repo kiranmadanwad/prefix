@@ -45,14 +45,14 @@ This Spring Boot application provides two APIs for prefix lookup operations. It 
 
 ## API Endpoints
 
-### GET /v1/prefixes/lookup/{id}
+### GET /v1/prefixes/{id}
 
 Use this endpoint to perform a single prefix lookup by providing the `{id}` parameter.
 
 #### Example Request
 
 ```http
-GET /v1/prefixes/lookup/23.79.237.4
+GET /v1/prefixes/23.79.237.4
 ```
 
 #### Example Response
@@ -73,14 +73,14 @@ GET /v1/prefixes/lookup/23.79.237.4
 }
 ```
 
-### POST /v1/prefixes/lookup - Batch Search
+### POST /v1/prefixes - Batch Search
 
 This endpoint allows you to perform batch prefix searches by sending a POST request with a list of prefix IDs in the request body.
 
 #### Example Request
 
 ```http
-POST /v1/prefixes/lookup
+POST /v1/prefixes
 Content-Type: application/json
 
   {

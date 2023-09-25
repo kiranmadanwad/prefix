@@ -45,8 +45,7 @@ public class PrefixService {
     }
 
     protected List<PrefixResult> getPrefixResultList(String ip, String providerName, PrefixGroup group) {
-        List<PrefixResult> res = group.getPrefixes().parallelStream().filter(x -> SubnetChecker.isInRange(x, ip))
+        return group.getPrefixes().parallelStream().filter(x -> SubnetChecker.isInRange(x, ip))
                 .map(item -> new PrefixResult(item, providerName, ip, group.getTags())).collect(Collectors.toList());
-        return res;
     }
 }
