@@ -38,8 +38,8 @@ This Spring Boot application provides two APIs for prefix lookup operations. It 
 ## Table of Contents
 
 - [API Endpoints](#api-endpoints)
-  - [GET /v1/prefixes/lookup/{id}](#get-v1prefixeslookupid)
-  - [POST /v1/prefixes/lookup - Batch Search](#post-v1prefixeslookup---batch-search)
+  - [GET /v1/prefixes/{id}](#get-v1prefixeslookupid)
+  - [POST /v1/prefixes - Batch Search](#post-v1prefixeslookup---batch-search)
 - [Building and Running with Docker](#building-and-running-with-docker)
 - [Accessing the Swagger UI](#accessing-the-swagger-ui)
 
