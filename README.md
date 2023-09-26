@@ -156,5 +156,12 @@ This UI provides a user-friendly interface to test and understand the functional
   ![image](https://github.com/kiranmadanwad/prefix/assets/29003308/d0ae6cbe-da40-4c94-bdc0-db30889936e6)
 
 
-Feel free to use and customize this README for your Spring Boot Prefix Lookup Application. Happy coding!
+Feel free to create branch with suggestion and changes to be done!
+
+## Api authentication
+Apis are not authenticated at the moment. No need to pass any authentication token. 
+The work to use JWT is in process and is in a local branch. Once done will push the authentication change branch
+
+## Python flask migration
+I am currenly working on migrating this logic to a Python flask service as well. (Might take some time to implement it)
 ## 
