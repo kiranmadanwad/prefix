@@ -24,7 +24,7 @@ public class PrefixControllerIntegrationTest {
 
     @Test
     public void testGetPrefixById() {
-        String url = "http://localhost:" + port + "/v1/prefixes/lookup/{id}";
+        String url = "http://localhost:" + port + "/v1/prefixes/{id}";
         ResponseEntity<PrefixSearchResponse> responseEntity =
                 restTemplate.getForEntity(url, PrefixSearchResponse.class, "23.79.237.1");
 
@@ -36,7 +36,7 @@ public class PrefixControllerIntegrationTest {
 
     @Test
     public void testGetPrefixByIdShouldFail() {
-        String url = "http://localhost:" + port + "/v1/prefixes/lookup/{id}";
+        String url = "http://localhost:" + port + "/v1/prefixes/{id}";
         ResponseEntity<String> responseEntity =
                 restTemplate.getForEntity(url, String.class, "23.79.237.0");
         Assertions.assertEquals(HttpStatus.NOT_FOUND.value(), responseEntity.getStatusCode().value());
@@ -44,7 +44,7 @@ public class PrefixControllerIntegrationTest {
 
     @Test
     public void testBatchLookup() {
-        String url = "http://localhost:" + port + "/v1/prefixes/lookup";
+        String url = "http://localhost:" + port + "/v1/prefixes";
         LookupBatchRequest requestBody = new LookupBatchRequest();
         requestBody.setIps(List.of("23.79.237.1", "23.79.237.2"));
 
