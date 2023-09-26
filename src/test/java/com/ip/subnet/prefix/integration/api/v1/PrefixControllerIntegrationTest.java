@@ -38,7 +38,7 @@ public class PrefixControllerIntegrationTest {
     public void testGetPrefixByIdShouldFail() {
         String url = "http://localhost:" + port + "/v1/prefixes/{id}";
         ResponseEntity<String> responseEntity =
-                restTemplate.getForEntity(url, String.class, "23.79.237.0");
+                restTemplate.getForEntity(url, String.class, "24.79.237.0");
         Assertions.assertEquals(HttpStatus.NOT_FOUND.value(), responseEntity.getStatusCode().value());
     }
 
